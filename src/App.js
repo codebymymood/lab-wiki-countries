@@ -9,12 +9,12 @@ function App() {
   return (
     <div className="App">
      <Navbar />   
-      <div class="container">
-       <div class="row">
-        <div class="col-sm">
+      <div className="container">
+       <div className="row">
+        <div className="col-sm">
          <CountriesList />
         </div>
-        <div class="col-sm">
+        <div className="col-sm">
             <Routes>
               <Route path="countries/:cca3" element={ <CountryDetails /> } />
             </Routes>

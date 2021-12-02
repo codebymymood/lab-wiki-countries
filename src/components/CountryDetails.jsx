@@ -22,17 +22,21 @@ function CountryDetails() {
 
     return (
         <div>            
-            <h1>Country details:</h1>
+            
             {
                 countryInfo.map((elem) => {
                     return (
                         <div>
-                            <img src={elem.flags.svg} height="400px" width="600px"/>
-                            <h1>{elem.name.official}</h1>
-                            <h3>Capital: {elem.capital}</h3><br/>
-                            <h3>Area: {elem.area} km2</h3><br/>                          
-
-                        </div>
+                                                                        
+                            <div className="card details" >
+                            <img className="card-img-top flags" src={elem.flags.svg} alt="imgFlag" height="100px"/>
+                            <div className="card-body">
+                               <h1>{elem.name.official}</h1>
+                                <h3>Capital: {elem.capital}</h3><br/>
+                                <h3>Area: {elem.area} km2</h3><br/>                             
+                            </div>
+                            </div>
+                            </div>
                     )
                 })
             }

@@ -23,9 +23,13 @@ function CountriesList() {
         {
         countries.map((elem, i) => {
             return (
-                <div>
-                    <img className="flags" src={elem.flags.svg} alt="imgFlag" height="100px"/>
-                    <Link to={`/countries/${elem.cca3}`}>{elem.name.official}</Link>
+                <div>                   
+                    <div className="card" >
+                    <img className="card-img-top flags" src={elem.flags.svg} alt="imgFlag" height="100px"/>
+                    <div className="card-body">
+                    <Link className="btn btn-primary" to={`/countries/${elem.cca3}`}>{elem.name.official}</Link>                        
+                    </div>
+                    </div>
                 </div>
             )
         })

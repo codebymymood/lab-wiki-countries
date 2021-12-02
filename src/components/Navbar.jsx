@@ -2,8 +2,14 @@ import React from 'react'
 
 function Navbar() {
     return (
-        <div>
-            <h1>LAB - WikiCountries</h1>
+        <div>           
+            <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <h1 class="navbar-brand" >LAB - WikiCountries</h1>
+                </div>                
+            </div>
+            </nav>
         </div>
     )
 }
